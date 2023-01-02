@@ -118,7 +118,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped lang="scss">
 .popup {
   transform: translateX(-50%);
 }

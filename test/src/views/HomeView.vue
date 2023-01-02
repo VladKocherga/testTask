@@ -1,7 +1,7 @@
 <template>
   <HeaderComponent></HeaderComponent>
   <main
-    class="max-w-[600px] max-h-[600px] m-auto flex overflow-y-scroll flex-wrap mt-[50px] gap-x-4"
+    class="max-w-[600px] max-h-[600px] m-auto flex overflow-y-scroll flex-wrap mt-[20px] gap-x-4 mb-[50px]"
   >
     <div
       v-for="(item, index) in todosByTitle"
@@ -22,7 +22,7 @@ import { IPost } from "@/types/types";
 
 export default defineComponent({
   name: "HomeView",
-  data() {
+  data: () => {
     return {
       store: useStore(),
     };

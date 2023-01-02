@@ -52,7 +52,7 @@
         </div>
 
         <div class="flex flex-wrap flex-col gap-y-2 relative">
-          <label class="text-left">Главное изображение</label>
+          <label class="text-left">Главное изображение:</label>
           <input
             type="text"
             placeholder="Введите ссылку на изображение"
@@ -78,7 +78,7 @@
           </small>
         </div>
         <div class="flex flex-wrap flex-col gap-y-2 relative">
-          <label class="text-left">Дополнительное изображение</label>
+          <label class="text-left">Дополнительное изображение:</label>
           <input
             type="text"
             placeholder="Введите ссылку на изображение"
@@ -105,7 +105,7 @@
           </small>
         </div>
         <div class="flex flex-wrap flex-col gap-y-2 relative">
-          <label class="text-left">Цена</label>
+          <label class="text-left">Цена:</label>
           <input
             type="number"
             placeholder="Введите цену"
@@ -144,7 +144,7 @@ export default {
       required: true as boolean,
     },
   },
-  data() {
+  data: () => {
     return {
       title: "" as string,
       description: "" as string,
