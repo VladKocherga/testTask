@@ -1,9 +1,9 @@
 <template>
-  <popupComponentVue
+  <postPopupComponent
     :is-open="isPopupOpen"
     @close="isPopupOpen = false"
     :post="post"
-  ></popupComponentVue>
+  ></postPopupComponent>
   <div class="flex flex-wrap justify-around gap-x-[10px] w-[100%] h-[100%]">
     <div class="h-[150px] w-[30%] min-h-[150px] flex justify-center">
       <img
@@ -25,9 +25,9 @@
 <script lang="ts">
 import { defineComponent, PropType } from "vue";
 import { IPost } from "@/types/types";
-import popupComponentVue from "./popups/popupComponent.vue";
+import postPopupComponent from "./popups/postPopupComponent.vue";
 export default defineComponent({
-  components: { popupComponentVue },
+  components: { postPopupComponent },
   name: "PostComponent",
   props: {
     post: {
